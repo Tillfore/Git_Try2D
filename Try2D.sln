@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Try2D", "Try2D.csproj", "{EF7C3890-A79B-9B2B-76D2-DB914FADB8DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF7C3890-A79B-9B2B-76D2-DB914FADB8DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF7C3890-A79B-9B2B-76D2-DB914FADB8DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF7C3890-A79B-9B2B-76D2-DB914FADB8DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF7C3890-A79B-9B2B-76D2-DB914FADB8DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

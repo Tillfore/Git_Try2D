@@ -1,0 +1,2192 @@
+fileFormatVersion: 2
+guid: 7a1e3d3276b10ce498c47fc64d7a3cb4
+timeCreated: 1491543363
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Flonne_0
+    21300002: Flonne_1
+    21300004: Flonne_2
+    21300006: Flonne_3
+    21300008: Flonne_4
+    21300010: Flonne_5
+    21300012: Flonne_6
+    21300014: Flonne_7
+    21300016: Flonne_8
+    21300018: Flonne_9
+    21300020: Flonne_10
+    21300022: Flonne_11
+    21300024: Flonne_12
+    21300026: Flonne_13
+    21300028: Flonne_14
+    21300030: Flonne_15
+    21300032: Flonne_16
+    21300034: Flonne_17
+    21300036: Flonne_18
+    21300038: Flonne_19
+    21300040: Flonne_20
+    21300042: Flonne_21
+    21300044: Flonne_22
+    21300046: Flonne_23
+    21300048: Flonne_24
+    21300050: Flonne_25
+    21300052: Flonne_26
+    21300054: Flonne_27
+    21300056: Flonne_28
+    21300058: Flonne_29
+    21300060: Flonne_30
+    21300062: Flonne_31
+    21300064: Flonne_32
+    21300066: Flonne_33
+    21300068: Flonne_34
+    21300070: Flonne_35
+    21300072: Flonne_36
+    21300074: Flonne_37
+    21300076: Flonne_38
+    21300078: Flonne_39
+    21300080: Flonne_40
+    21300082: Flonne_41
+    21300084: Flonne_42
+    21300086: Flonne_43
+    21300088: Flonne_44
+    21300090: Flonne_45
+    21300092: Flonne_46
+    21300094: Flonne_47
+    21300096: Flonne_48
+    21300098: Flonne_49
+    21300100: Flonne_50
+    21300102: Flonne_51
+    21300104: Flonne_52
+    21300106: Flonne_53
+    21300108: Flonne_54
+    21300110: Flonne_55
+    21300112: Flonne_56
+    21300114: Flonne_57
+    21300116: Flonne_58
+    21300118: Flonne_59
+    21300120: Flonne_60
+    21300122: Flonne_61
+    21300124: Flonne_62
+    21300126: Flonne_63
+    21300128: Flonne_64
+    21300130: Flonne_65
+    21300132: Flonne_66
+    21300134: Flonne_67
+    21300136: Flonne_68
+    21300138: Flonne_69
+    21300140: Flonne_70
+    21300142: Flonne_71
+    21300144: Flonne_72
+    21300146: Flonne_73
+    21300148: Flonne_74
+    21300150: Flonne_75
+    21300152: Flonne_76
+    21300154: Flonne_77
+    21300156: Flonne_78
+    21300158: Flonne_79
+    21300160: Flonne_80
+    21300162: Flonne_81
+    21300164: Flonne_82
+    21300166: Flonne_83
+    21300168: Flonne_84
+    21300170: Flonne_85
+    21300172: Flonne_86
+    21300174: Flonne_87
+    21300176: Flonne_88
+    21300178: Flonne_89
+    21300180: Flonne_90
+    21300182: Flonne_91
+    21300184: Flonne_92
+    21300186: Flonne_93
+    21300188: Flonne_94
+    21300190: Flonne_95
+    21300192: Flonne_96
+    21300194: Flonne_97
+    21300196: Flonne_98
+    21300198: Flonne_99
+    21300200: Flonne_100
+    21300202: Flonne_101
+    21300204: Flonne_102
+    21300206: Flonne_103
+    21300208: Flonne_104
+    21300210: Flonne_105
+    21300212: Flonne_106
+    21300214: Flonne_107
+    21300216: Flonne_108
+    21300218: Flonne_109
+    21300220: Flonne_110
+    21300222: Flonne_111
+    21300224: Flonne_112
+    21300226: Flonne_113
+    21300228: Flonne_114
+    21300230: Flonne_115
+    21300232: Flonne_116
+    21300234: Flonne_117
+    21300236: Flonne_118
+    21300238: Flonne_119
+    21300240: Flonne_120
+    21300242: Flonne_121
+    21300244: Flonne_122
+    21300246: Flonne_123
+    21300248: Flonne_124
+    21300250: Flonne_125
+    21300252: Flonne_126
+    21300254: Flonne_127
+    21300256: Flonne_128
+    21300258: Flonne_129
+    21300260: Flonne_130
+    21300262: Flonne_131
+    21300264: Flonne_132
+    21300266: Flonne_133
+    21300268: Flonne_134
+    21300270: Flonne_135
+    21300272: Flonne_136
+    21300274: Flonne_137
+    21300276: Flonne_138
+    21300278: Flonne_139
+    21300280: Flonne_140
+    21300282: Flonne_141
+    21300284: Flonne_142
+    21300286: Flonne_143
+    21300288: Flonne_144
+    21300290: Flonne_145
+    21300292: Flonne_146
+    21300294: Flonne_147
+    21300296: Flonne_148
+    21300298: Flonne_149
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Flonne_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2665
+        width: 97
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_1
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 2665
+        width: 97
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_2
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 2665
+        width: 91
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_3
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 2666
+        width: 97
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_4
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 2666
+        width: 102
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_5
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 2665
+        width: 100
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_6
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 2671
+        width: 95
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_7
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 2671
+        width: 95
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_8
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 2672
+        width: 95
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_9
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 2668
+        width: 98
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_10
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 2668
+        width: 103
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_11
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 2671
+        width: 100
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_12
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 2485
+        width: 94
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_13
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 2489
+        width: 91
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_14
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 2489
+        width: 93
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_15
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 2492
+        width: 91
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_16
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 2493
+        width: 93
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_17
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 2486
+        width: 98
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_18
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 2493
+        width: 91
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_19
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 2496
+        width: 95
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_20
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 2489
+        width: 102
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_21
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 2496
+        width: 94
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_22
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 2492
+        width: 87
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_23
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 2490
+        width: 90
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_24
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 2306
+        width: 98
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_25
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 2307
+        width: 100
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_26
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 2306
+        width: 96
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_27
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 2311
+        width: 114
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_28
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 2306
+        width: 100
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_29
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 2306
+        width: 97
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_30
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 2389
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_31
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 2307
+        width: 85
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_32
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 2310
+        width: 100
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_33
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 2308
+        width: 97
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_34
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 2314
+        width: 114
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_35
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 2307
+        width: 79
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_36
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 2308
+        width: 90
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_37
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 2127
+        width: 87
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_38
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 2127
+        width: 87
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_39
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 2127
+        width: 105
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_40
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 2127
+        width: 101
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_41
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 2127
+        width: 94
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_42
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 2128
+        width: 92
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_43
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 2131
+        width: 107
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_44
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 2128
+        width: 108
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_45
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1950
+        width: 91
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_46
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1952
+        width: 93
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_47
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 1955
+        width: 115
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_48
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 1955
+        width: 114
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_49
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 1943
+        width: 97
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_50
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 1950
+        width: 97
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_51
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 1956
+        width: 120
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_52
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 1956
+        width: 114
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_53
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1770
+        width: 87
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_54
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 1770
+        width: 90
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_55
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1767
+        width: 95
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_56
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 1769
+        width: 93
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_57
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 1770
+        width: 86
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_58
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 1771
+        width: 89
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_59
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 1771
+        width: 101
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_60
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 1773
+        width: 100
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_61
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1606
+        width: 87
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_62
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 1606
+        width: 91
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_63
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 1603
+        width: 105
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_64
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1603
+        width: 98
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_65
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 1648
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_66
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 1644
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_67
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1602
+        width: 90
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_68
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 1601
+        width: 88
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_69
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 1602
+        width: 102
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_70
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 1601
+        width: 97
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_71
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 1641
+        width: 33
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_72
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 1644
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_73
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1416
+        width: 85
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_74
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 1412
+        width: 86
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_75
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1409
+        width: 90
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_76
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1409
+        width: 94
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_77
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 1406
+        width: 101
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_78
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 1404
+        width: 100
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_79
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 1404
+        width: 100
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_80
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1404
+        width: 97
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_81
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 1229
+        width: 93
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_82
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1229
+        width: 93
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_83
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 1232
+        width: 91
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_84
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 1230
+        width: 89
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_85
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 1236
+        width: 103
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_86
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 1233
+        width: 104
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_87
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 1229
+        width: 81
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_88
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 1232
+        width: 97
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_89
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1047
+        width: 86
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_90
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1048
+        width: 94
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_91
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 1071
+        width: 119
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_92
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 1066
+        width: 118
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_93
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1086
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_94
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1090
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_95
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 1057
+        width: 80
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_96
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 1057
+        width: 91
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_97
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 1068
+        width: 128
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_98
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 1061
+        width: 129
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_99
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 871
+        width: 91
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_100
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 871
+        width: 94
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_101
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 871
+        width: 92
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_102
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 871
+        width: 92
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_103
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 1000
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_104
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 1000
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_105
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 871
+        width: 95
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_106
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 871
+        width: 94
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_107
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 874
+        width: 96
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_108
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 871
+        width: 93
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_109
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1011
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_110
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 1007
+        width: 40
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_111
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 714
+        width: 114
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_112
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 713
+        width: 87
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_113
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 717
+        width: 108
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_114
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 713
+        width: 113
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_115
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 713
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_116
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 754
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_117
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 717
+        width: 102
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_118
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 720
+        width: 101
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_119
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 732
+        width: 118
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_120
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 707
+        width: 114
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_121
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 707
+        width: 113
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_122
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 767
+        width: 41
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_123
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 516
+        width: 110
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_124
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 529
+        width: 122
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_125
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 577
+        width: 39
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_126
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 528
+        width: 125
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_127
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 597
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_128
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 522
+        width: 114
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_129
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 535
+        width: 108
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_130
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 521
+        width: 129
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_131
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 582
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_132
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 485
+        width: 406
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_133
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 198
+        width: 290
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_134
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 373
+        width: 75
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_135
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 370
+        width: 162
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_136
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 359
+        width: 168
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_137
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 357
+        width: 163
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_138
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 413
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_139
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 380
+        width: 5
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_140
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 385
+        width: 37
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_141
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 359
+        width: 51
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_142
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 282
+        width: 85
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_143
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 216
+        width: 63
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 187
+        width: 42
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_145
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1
+        width: 95
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_146
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 1
+        width: 97
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_147
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 1
+        width: 97
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_148
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1
+        width: 96
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Flonne_149
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 62
+        width: 232
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
