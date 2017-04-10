@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CharacterControl : MonoBehaviour {
 
+    private GameObject displayLayer;
     private float speed;
     private bool direction_index = true; //记录前后朝向
     private bool direction_left = true;  //记录左右朝向
@@ -18,6 +19,7 @@ public class CharacterControl : MonoBehaviour {
     {
         this.speed = gameObject.GetComponent<CharacterData>().speed/100;
         animator = gameObject.GetComponentInChildren<Animator>();
+        displayLayer = gameObject.GetComponent<CharacterData>().characterDisplayer;
     }
 
     public void Move()
@@ -80,7 +82,7 @@ public class CharacterControl : MonoBehaviour {
         }
         if (h < -0.05f)
         {
-            transform.localScale = new Vector3(1, 1, 1);
+            displayLayer.transform.localScale = new Vector3(1, 1, 1);
             direction_left = true;
             if (iswalking) return;
             else if (h < -0.25f)
@@ -92,7 +94,7 @@ public class CharacterControl : MonoBehaviour {
         }
         else if (h > 0.05f)
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+            displayLayer.transform.localScale = new Vector3(-1, 1, 1);
             direction_left = false;
             if (iswalking) return;
             else if (h > 0.25f)

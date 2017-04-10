@@ -14,5 +14,8 @@ public class CharacterData : MonoBehaviour {
     public int speed = 10;
     public int toughness = 0;
     public GameObject handheld;
+    public GameObject characterDisplayer;
+    public GameObject characterSensor;
+    public GameObject characterUI;
 
 }
