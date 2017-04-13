@@ -1,10 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿
+[System.Serializable] //序列化
+public class PlayerProperty {
 
-public class PlayerProperty : MonoBehaviour {
-
-    public string playerName;
-    public int playerMoney;
+    public string playerName = "玩家";
+    public int playerMoney = 500;
 
 }

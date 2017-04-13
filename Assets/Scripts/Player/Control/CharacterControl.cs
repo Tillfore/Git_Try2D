@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CharacterControl : MonoBehaviour {
 
+    public CharacterData characterData;
     private GameObject displayLayer;
     private float speed;
     private bool direction_index = true; //记录前后朝向
@@ -17,11 +18,21 @@ public class CharacterControl : MonoBehaviour {
 
     void Start()
     {
-        this.speed = gameObject.GetComponent<CharacterData>().speed/100;
+        this.speed = characterData.speed/100;
         animator = gameObject.GetComponentInChildren<Animator>();
-        displayLayer = gameObject.GetComponent<CharacterData>().characterDisplayer;
+        displayLayer = characterData.characterDisplayer;
+        SetObjectZ();  //设置深度
     }
 
+    public void SetObjectZ(Transform trans = null)
+    {
+        if (!trans) trans = gameObject.transform;
+        var pos = trans.position;
+        pos.z = (pos.x + pos.y)*0.0001f;
+        gameObject.transform.position = pos;
+    }
+
+#region 移动及移动动画和状态
     public void Move()
     {
         deltaX = Input.GetAxis("Horizontal");
@@ -49,9 +60,8 @@ public class CharacterControl : MonoBehaviour {
             float maxDistanceDelta = Time.deltaTime * speed;
             transform.position = Vector3.MoveTowards(currentPosition, moveTowardPosition, maxDistanceDelta);
         }
-
+        SetObjectZ();
     }
-
     private void MoveAnimation(float h,float v)  //移动动画及移动状态
     {
         if (v < -0.05f)
@@ -112,6 +122,6 @@ public class CharacterControl : MonoBehaviour {
             iswalking = false;
         }
     }
-
+#endregion
 
 }

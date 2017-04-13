@@ -81,6 +81,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Class\Experiment\Attribute.cs" />
+    <Compile Include="Assets\Scripts\Class\Experiment\BaseCharacter.cs" />
+    <Compile Include="Assets\Scripts\Class\Experiment\BaseStat.cs" />
+    <Compile Include="Assets\Scripts\Class\Experiment\CharacterGenerator.cs" />
+    <Compile Include="Assets\Scripts\Class\Experiment\ModifiedStat.cs" />
+    <Compile Include="Assets\Scripts\Class\Experiment\PlayerCharacter.cs" />
+    <Compile Include="Assets\Scripts\Class\Experiment\Skill.cs" />
+    <Compile Include="Assets\Scripts\Class\Experiment\Vital.cs" />
+    <Compile Include="Assets\Scripts\Class\PlayerClass.cs" />
     <Compile Include="Assets\Scripts\Player\Control\CameraControl.cs" />
     <Compile Include="Assets\Scripts\Player\Control\CharacterControl.cs" />
     <Compile Include="Assets\Scripts\Player\Control\PlayerControl.cs" />

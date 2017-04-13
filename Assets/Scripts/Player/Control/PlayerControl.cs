@@ -4,32 +4,37 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour {
 
+    public PlayerProperty plyerProperty;
     public GameObject defaultControlObject;
     private GameObject controlObject;
     private GameObject targetObject;
     private int controlObject_speed;
+    private CharacterControl characterControl;
+    private CameraControl cameraControl;
 
 
     void Start()
     {
         controlObject = defaultControlObject;
         targetObject = defaultControlObject;
-        controlObject_speed = controlObject.GetComponent<CharacterData>().speed;
+        characterControl = controlObject.GetComponent<CharacterControl>();
+        cameraControl = gameObject.GetComponent<CameraControl>();
+        controlObject_speed = characterControl.characterData.speed;
     }
 
     void Update()
     {
         if (controlObject != null)
         {
-            MoveControl();
-            gameObject.GetComponent<CameraControl>().GetShootingTarget(controlObject, controlObject_speed);
+            MoveControl(); //移动操作
+            cameraControl.GetShootingTarget(controlObject, controlObject_speed); //调用摄像机
         }
     }
 
 
     void MoveControl()
     {
-        controlObject.GetComponent<CharacterControl>().Move();
+        characterControl.Move();
     }
 
 }

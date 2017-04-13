@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CameraControl : MonoBehaviour {
 
-    public float maxDistance = 1;    //镜头跟随缓冲距离
     public int maxSpeed = 500;         //最快镜头速度
+    public float maxDistance = 1;    //镜头跟随缓冲距离
     private bool isStatic;          //镜头目标是否静止
     private Transform shootingTarget;
     private float mSpeed;           //镜头速度
@@ -30,7 +30,7 @@ public class CameraControl : MonoBehaviour {
     Vector3 GetCameraMovePos()
     {
         Vector3 pos = shootingTarget.position;
-        pos.z -= 10;
+        pos.z -= 10;   //摄像机高度
         var distance = (pos - Camera.main.transform.position).magnitude;
         if(!isStatic) pos = Camera.main.transform.position;
         mSpeed *= distance/maxDistance ;
