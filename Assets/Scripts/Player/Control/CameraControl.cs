@@ -13,12 +13,12 @@ public class CameraControl : MonoBehaviour {
 //  public Transform roomRightUp;
     public Vector3 mTargetPos = Vector3.zero;
 
-    public void GetShootingTarget(GameObject shootingObject,int speed)
+    public void GetShootingTarget(Transform trans,int speed)
     {
         mSpeed = speed / 100;
-        if (shootingTarget == shootingObject.transform && !isStatic) isStatic = true;
+        if (shootingTarget == trans && !isStatic) isStatic = true;
         else isStatic = false;
-        shootingTarget = shootingObject.transform;
+        shootingTarget = trans;
     }
     void LateUpdate()
     {

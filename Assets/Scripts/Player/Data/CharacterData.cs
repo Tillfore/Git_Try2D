@@ -13,7 +13,6 @@ public class CharacterData {
     public int toughness = 0;
     public GameObject handheld;
     public GameObject characterDisplayer;
-    public GameObject characterSensor;
     public GameObject characterUI;
 
 }

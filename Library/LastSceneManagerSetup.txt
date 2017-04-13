@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/StandardTest.unity
+- path: E:/Unity/Projects/Try3D/Assets/Scene/Td/tryTd.unity
   isLoaded: 1
   isActive: 1
