@@ -2,7 +2,7 @@
 public class Vital : ModifiedStat {
     private int _curValue;
 
-    public Vital()
+    public Vital(int i)
     {
         _curValue = 0;
     }

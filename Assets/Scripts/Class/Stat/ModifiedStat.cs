@@ -17,7 +17,7 @@ public class ModifiedStat : BaseStat {
         _mods.Add(mod);
     }
 
-    private void CalculateModValue()
+    protected virtual void CalculateModValue()
     {
         _modValue = 0;
         if (_mods.Count > 0) {

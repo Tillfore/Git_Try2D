@@ -1,7 +1,7 @@
 ﻿public class Attribute : BaseStat {
 
     //属性值
-	public Attribute()
+	public Attribute(int i)
     {
         
     }

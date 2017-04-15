@@ -7,53 +7,50 @@ public class BaseCharacter : MonoBehaviour {
 
     #region 临时数据库
     public CharacterData characterData;//暂时代替数据库
-    private float speed;
     #endregion
 
+    private uint _id;
     private string _name;
 
-    private Attribute[] _primaryAttribute;
+
     private Vital[] _vital;
     private Property[] _property;
-    private Skill[] _skill;
+    protected int m_deltaPropertyLength = 3;//一般角色少继承3个能力值
 
     private string _standAnime = "Anime_stand_index";
 
-    protected GameObject displayLayer;
-    protected Animator animator;
-    protected bool direction_index = true; //记录前后朝向
-    protected bool direction_left = true;  //记录左右朝向
-    protected bool iswalking = false;
-    protected bool isMoveReady = false;     //MoveAnimation的转身记录
+    protected GameObject m_displayLayer;
+    protected Animator m_animator;
+    protected bool m_direction_index = true; //记录前后朝向
+    protected bool m_direction_left = true;  //记录左右朝向
+    protected bool m_iswalking = false;
+    protected bool m_isMoveReady = false;     //MoveAnimation的转身记录
+    protected float m_speed;
 
     public void Awake()
     {
         _name = string.Empty;
-        _primaryAttribute = new Attribute[Enum.GetValues(typeof(AttributeName)).Length];
+        SetupCharacterData();
         _vital = new Vital[Enum.GetValues(typeof(VitalName)).Length];
-        _property = new Property[Enum.GetValues(typeof(PropertyName)).Length];
-        _skill = new Skill[Enum.GetValues(typeof(SkillName)).Length];
+        _property = new Property[Enum.GetValues(typeof(PropertyName)).Length-m_deltaPropertyLength];
         //创建各属性能力值列表
-        SetupPrimaryAttributes();
         SetupVitals();
         SetupPropertys();
-        SetupSkills();
-        #region 临时数据读取
-        this.speed = characterData.speed / 100;
-        displayLayer = characterData.characterDisplayer;
-        #endregion
         //子类附加
-        AwakeAddition();
+
     }
 
-    public virtual void AwakeAddition()
+    public virtual void SetupCharacterData()
     {
-        Debug.Log("AwakeAddition没写");
+        #region 临时数据读取
+        this.m_speed = characterData.speed / 100;
+        m_displayLayer = characterData.characterDisplayer;
+        #endregion
     }
 
     public virtual void Start()
     {
-        animator = gameObject.GetComponentInChildren<Animator>();
+        m_animator = gameObject.GetComponentInChildren<Animator>();
         SetObjectZ();
     }
 
@@ -76,6 +73,11 @@ public class BaseCharacter : MonoBehaviour {
     }
 
     #region public 存取名称的私有变量    cheracterName
+    public uint id
+    {
+        get { return _id; }
+        set { _id = value; }
+    }
     public string characterName
     {
         get { return _name; }
@@ -84,37 +86,23 @@ public class BaseCharacter : MonoBehaviour {
     #endregion
 
     #region private 创建属性、生命体力、技能    SetupVitals
-    private void SetupPrimaryAttributes()
-    {
-        for (int i = 0; i < _primaryAttribute.Length; i++) {
-            _primaryAttribute[i] = new Attribute();
-        }
-    }
+
     private void SetupVitals()
     {
         for (int i = 0; i < _vital.Length; i++) {
-            _vital[i] = new Vital();
+            _vital[i] = new Vital(i);
         }
     }
     private void SetupPropertys()
     {
         for (int i = 0; i < _property.Length; i++) {
-            _property[i] = new Property();
-        }
-    }
-    private void SetupSkills()
-    {
-        for (int i = 0; i < _skill.Length; i++) {
-            _skill[i] = new Skill();
+            _property[i] = new Property(i);
         }
     }
     #endregion
 
     #region public 获取属性、生命体力、技能值   GetVital
-    public Attribute GetPrimaryAttribute(int index)
-    {
-        return _primaryAttribute[index];
-    }
+
     public Vital GetVital(int index)
     {
         return _vital[index];
@@ -123,10 +111,10 @@ public class BaseCharacter : MonoBehaviour {
     {
         return _property[index];
     }
-    public Skill GetSkill(int index)
+    /*public Skill GetSkill(int index)
     {
         return _skill[index];
-    }
+    }*/
     #endregion
 
     /*#region private 修改属性、生命体力、技能值
@@ -161,8 +149,8 @@ public class BaseCharacter : MonoBehaviour {
         for(int i = 0; i < _vital.Length; i++) {
             _vital[i].Update();
         }
-        for(int i = 0; i < _skill.Length; i++) {
-            _skill[i].Update();
+        for(int i = 0; i < _property.Length; i++) {
+            _property[i].Update();
         }
     }
 
@@ -170,20 +158,20 @@ public class BaseCharacter : MonoBehaviour {
     public void Move(float deltaX, float deltaY)
     {
         MoveAnimation(deltaX, deltaY);  //调整动画 返回目标位置的deltaX、Y
-        if (iswalking) {
+        if (m_iswalking) {
             //根据两个朝向bool，确认移动方向；
-            if (direction_index) {
+            if (m_direction_index) {
                 deltaY = -1; deltaX = 1;
-                if (direction_left) deltaX = -1;
+                if (m_direction_left) deltaX = -1;
             }
             else {
                 deltaY = 1; deltaX = 1;
-                if (direction_left) deltaX = -1;
+                if (m_direction_left) deltaX = -1;
             }
             Vector3 moveTowardPosition = transform.position;
             moveTowardPosition.x += deltaX;
             moveTowardPosition.y += deltaY;
-            float maxDistanceDelta = Time.deltaTime * speed;
+            float maxDistanceDelta = Time.deltaTime * m_speed;
             transform.position = Vector3.MoveTowards(transform.position, moveTowardPosition, maxDistanceDelta);
         }
         //SetObjectZ();
@@ -191,52 +179,52 @@ public class BaseCharacter : MonoBehaviour {
     private void MoveAnimation(float h, float v)  //移动动画及移动状态
     {
         if (v < -0.05f) {
-            if (!direction_index) iswalking = false;
-            if (!iswalking) {
+            if (!m_direction_index) m_iswalking = false;
+            if (!m_iswalking) {
                 _standAnime = "Anime_stand_index";
-                animator.Play(_standAnime);
-                direction_index = true;
-                animator.SetBool("move_walk", true);
+                m_animator.Play(_standAnime);
+                m_direction_index = true;
+                m_animator.SetBool("move_walk", true);
                 v = -1;
-                iswalking = true;
+                m_iswalking = true;
             }
         }
         else if (v > 0.05f) {
-            if (direction_index) iswalking = false;
-            if (!iswalking) {
+            if (m_direction_index) m_iswalking = false;
+            if (!m_iswalking) {
                 _standAnime = "Anime_stand_back";
-                animator.Play(_standAnime);
-                direction_index = false;
-                animator.SetBool("move_walk", true);
+                m_animator.Play(_standAnime);
+                m_direction_index = false;
+                m_animator.SetBool("move_walk", true);
                 v = 1;
-                iswalking = true;
+                m_iswalking = true;
             }
         }
         if (h < -0.05f) {
-            displayLayer.transform.localScale = new Vector3(1, 1, 1);
-            direction_left = true;
-            if (iswalking) return;
+            m_displayLayer.transform.localScale = new Vector3(1, 1, 1);
+            m_direction_left = true;
+            if (m_iswalking) return;
             else if (h < -0.25f) {
                 h = -1;
-                animator.SetBool("move_walk", true);
-                iswalking = true;
+                m_animator.SetBool("move_walk", true);
+                m_iswalking = true;
             }
         }
         else if (h > 0.05f) {
-            displayLayer.transform.localScale = new Vector3(-1, 1, 1);
-            direction_left = false;
-            if (iswalking) return;
+            m_displayLayer.transform.localScale = new Vector3(-1, 1, 1);
+            m_direction_left = false;
+            if (m_iswalking) return;
             else if (h > 0.25f) {
                 h = 1;
-                animator.SetBool("move_walk", true);
-                iswalking = true;
+                m_animator.SetBool("move_walk", true);
+                m_iswalking = true;
             }
         }
         //停止
-        if (iswalking && System.Math.Abs(h) < 1 && System.Math.Abs(v) < 1) {
-            animator.SetBool("move_walk", false);
-            animator.Play(_standAnime);
-            iswalking = false;
+        if (m_iswalking && Math.Abs(h) < 1 && Math.Abs(v) < 1) {
+            m_animator.SetBool("move_walk", false);
+            m_animator.Play(_standAnime);
+            m_iswalking = false;
         }
     }
     #endregion

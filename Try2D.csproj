@@ -79,24 +79,33 @@
     <Reference Include="UnityEditor.iOS.Extensions.Common">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>Assets\Scripts\Excel\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Excel">
+      <HintPath>Assets\Scripts\Excel\Excel.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Ancient\CharacterControl.cs" />
-    <Compile Include="Assets\Scripts\Class\Experiment\Attribute.cs" />
-    <Compile Include="Assets\Scripts\Class\Experiment\BaseCharacter.cs" />
-    <Compile Include="Assets\Scripts\Class\Experiment\BaseStat.cs" />
+    <Compile Include="Assets\Scripts\Ancient\CharacterDataEditor.cs" />
+    <Compile Include="Assets\Scripts\Class\Character\BaseCharacter.cs" />
+    <Compile Include="Assets\Scripts\Class\Character\EnemyCharacter.cs" />
+    <Compile Include="Assets\Scripts\Class\Character\PlayerCharacter.cs" />
     <Compile Include="Assets\Scripts\Class\Experiment\CharacterGenerator.cs" />
-    <Compile Include="Assets\Scripts\Class\Experiment\Information.cs" />
-    <Compile Include="Assets\Scripts\Class\Experiment\ModifiedStat.cs" />
-    <Compile Include="Assets\Scripts\Class\Experiment\PlayerCharacter.cs" />
-    <Compile Include="Assets\Scripts\Class\Experiment\Property.cs" />
-    <Compile Include="Assets\Scripts\Class\Experiment\Skill.cs" />
-    <Compile Include="Assets\Scripts\Class\Experiment\Vital.cs" />
     <Compile Include="Assets\Scripts\Class\PlayerClass.cs" />
+    <Compile Include="Assets\Scripts\Class\Stat\Attribute.cs" />
+    <Compile Include="Assets\Scripts\Class\Stat\BaseStat.cs" />
+    <Compile Include="Assets\Scripts\Class\Stat\Information.cs" />
+    <Compile Include="Assets\Scripts\Class\Stat\ModifiedStat.cs" />
+    <Compile Include="Assets\Scripts\Class\Stat\Property.cs" />
+    <Compile Include="Assets\Scripts\Class\Stat\Skill.cs" />
+    <Compile Include="Assets\Scripts\Class\Stat\Vital.cs" />
     <Compile Include="Assets\Scripts\Player\Control\CameraControl.cs" />
     <Compile Include="Assets\Scripts\Player\Control\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\Player\Data\CharacterData.cs" />
-    <Compile Include="Assets\Scripts\Player\Data\PlayerInformation.cs" />
+    <Compile Include="Assets\Scripts\Player\Data\Information\PlayerInformation.cs" />
+    <Compile Include="Assets\Scripts\Player\Data\PlayerCharacterData.cs" />
     <Compile Include="Assets\Scripts\World\NPC\NPCDATA.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
