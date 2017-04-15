@@ -15,7 +15,7 @@ public class BaseCharacter : MonoBehaviour {
 
     private Vital[] _vital;
     private Property[] _property;
-    protected int m_deltaPropertyLength = 3;//一般角色少继承3个能力值
+    protected int m_deltaDifferentCharacter = 0;    //声明子类的具体类别
 
     private string _standAnime = "Anime_stand_index";
 
@@ -25,25 +25,86 @@ public class BaseCharacter : MonoBehaviour {
     protected bool m_direction_left = true;  //记录左右朝向
     protected bool m_iswalking = false;
     protected bool m_isMoveReady = false;     //MoveAnimation的转身记录
-    protected float m_speed;
+
+    public BaseCharacter()
+    {
+    }
+
+    #region public 封装角色名称的读写    ID  CheracterName
+    public uint ID {
+        get { return _id; }
+        set { _id = value; }
+    }
+    public string CharacterName {
+        get { return _name; }
+        set { _name = value; }
+    }
+    #endregion
+    #region public 封装能力值的读写
+    public Vital Hp {
+        get { return GetVital(0); }
+        set { SetVital(value, 0); }
+    }
+    public Vital Ep {
+        get { return GetVital(1); }
+        set { SetVital(value, 1); }
+    }
+    public Property Attack {
+        get { return GetProperty(0); }
+        set { SetProperty(value, 0); }
+    }
+    public Property AttackSpeed {
+        get { return GetProperty(2); }
+        set { SetProperty(value, 2); }
+    }
+    public Property Defend {
+        get { return GetProperty(1); }
+        set { SetProperty(value, 1); }
+    }
+    public Property Speed {
+        get { return GetProperty(3); }
+        set { SetProperty(value, 3); }
+    }
+    public Property Toughness {
+        get { return GetProperty(4); }
+        set { SetProperty(value, 4); }
+    }
+    public Property Agility {
+        get { return GetProperty(5); }
+        set { SetProperty(value, 5); }
+    }
+    public Property FantasyAttack {
+        get { return GetProperty(6); }
+        set { SetProperty(value, 6); }
+    }
+    public Property FantasyAttackSpeed {
+        get { return GetProperty(7); }
+        set { SetProperty(value, 7); }
+    }
+    #endregion
 
     public void Awake()
     {
+        var deltaPropertyLength = 0;
+        if (m_deltaDifferentCharacter != 1) {deltaPropertyLength = 2;} //一般角色少继承2个能力值
         _name = string.Empty;
-        SetupCharacterData();
         _vital = new Vital[Enum.GetValues(typeof(VitalName)).Length];
-        _property = new Property[Enum.GetValues(typeof(PropertyName)).Length-m_deltaPropertyLength];
+        _property = new Property[Enum.GetValues(typeof(PropertyName)).Length - deltaPropertyLength];
         //创建各属性能力值列表
         SetupVitals();
         SetupPropertys();
         //子类附加
-
+        SecondAwake();
     }
 
-    public virtual void SetupCharacterData()
+    public virtual void SecondAwake()   //补充Setup 
     {
+        characterData.GetData();
+        Speed.BasicValue = characterData.speed;
         #region 临时数据读取
-        this.m_speed = characterData.speed / 100;
+        Debug.Log("speed is"+characterData.speed);
+        Debug.Log("BasicValue is "+Speed.BasicValue);
+        Debug.Log("Value is "+Speed.Value);
         m_displayLayer = characterData.characterDisplayer;
         #endregion
     }
@@ -64,7 +125,7 @@ public class BaseCharacter : MonoBehaviour {
 
     }
 
-    public void SetObjectZ(Transform trans = null)
+    protected void SetObjectZ(Transform trans = null)
     {
         if (!trans) trans = gameObject.transform;
         var pos = trans.position;
@@ -72,21 +133,8 @@ public class BaseCharacter : MonoBehaviour {
         gameObject.transform.position = pos;
     }
 
-    #region public 存取名称的私有变量    cheracterName
-    public uint id
-    {
-        get { return _id; }
-        set { _id = value; }
-    }
-    public string characterName
-    {
-        get { return _name; }
-        set { _name = value; }
-    }
-    #endregion
 
-    #region private 创建属性、生命体力、技能    SetupVitals
-
+    #region public 能力值的创建、读写与更新   SetupVitals GetVital SetVital ModifiedStatsUpdate
     private void SetupVitals()
     {
         for (int i = 0; i < _vital.Length; i++) {
@@ -99,9 +147,6 @@ public class BaseCharacter : MonoBehaviour {
             _property[i] = new Property(i);
         }
     }
-    #endregion
-
-    #region public 获取属性、生命体力、技能值   GetVital
 
     public Vital GetVital(int index)
     {
@@ -110,6 +155,44 @@ public class BaseCharacter : MonoBehaviour {
     public Property GetProperty(int index)
     {
         return _property[index];
+    }
+
+    protected void SetVital(Vital value, int index = -1)
+    {
+        if (index < 0) {
+            for (int i = 0; i < _vital.Length; i++) {
+                if (_vital[i].Type == value.Type) {
+                    _vital[i] = value;return;
+                }
+            }
+        }
+        else if(_vital[index].Type == value.Type) {
+            _vital[index] = value;return;
+        }
+        else { Debug.Log("Set失败，属性不匹配！"); }
+    }
+    protected void SetProperty(Property value,int index = -1)
+    {
+        if (index < 0) {
+            for (int i = 0; i < _property.Length; i++) {
+                if (_property[i].Type == value.Type) {
+                    _property[i] = value; return;
+                }
+            }
+        }
+        else if (_property[index].Type == value.Type) {
+            _property[index] = value; return;
+        }
+        else { Debug.Log("Set失败，属性不匹配！"); }
+    }
+    public void ModifiedStatsUpdate()
+    {
+        for (int i = 0; i < _vital.Length; i++) {
+            _vital[i].Update();
+        }
+        for (int i = 0; i < _property.Length; i++) {
+            _property[i].Update();
+        }
     }
     /*public Skill GetSkill(int index)
     {
@@ -144,15 +227,6 @@ public class BaseCharacter : MonoBehaviour {
     }
     #endregion */
 
-    public void StatUpdate()
-    {
-        for(int i = 0; i < _vital.Length; i++) {
-            _vital[i].Update();
-        }
-        for(int i = 0; i < _property.Length; i++) {
-            _property[i].Update();
-        }
-    }
 
     #region 移动及移动动画和状态
     public void Move(float deltaX, float deltaY)
@@ -171,7 +245,7 @@ public class BaseCharacter : MonoBehaviour {
             Vector3 moveTowardPosition = transform.position;
             moveTowardPosition.x += deltaX;
             moveTowardPosition.y += deltaY;
-            float maxDistanceDelta = Time.deltaTime * m_speed;
+            float maxDistanceDelta = Time.deltaTime * Speed.Value/100;
             transform.position = Vector3.MoveTowards(transform.position, moveTowardPosition, maxDistanceDelta);
         }
         //SetObjectZ();

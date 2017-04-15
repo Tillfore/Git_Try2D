@@ -1,37 +1,39 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using System;
-
+﻿
 public class Property : ModifiedStat {
 
-    protected PropertyName _type;
-    protected int _value;
+    private PropertyName _type;
+    private NatureStruct _natureStruct;
     //能力值
     public Property(int i)
     {
         _type = (PropertyName) i ;
-        _value = 0;
+        _natureStruct.normal = 1;
+        _natureStruct.fire = 0;
     }
+
 
     public PropertyName Type
     {
         get { return _type; }
     }
-    public int Value
-    {
-        get { return _value; }
-        set { _value = value; }
+    public NatureStruct Nature {
+        get { return _natureStruct; }
+        set { _natureStruct = value; }
     }
+
 }
 public enum PropertyName {
-    Attack,
-    AttackSpeed,
-    Defend,
-    Toughness,
-    Speed,
+    Attack=0,
+    Defend = 1,
+    AttackSpeed =2,
+    Speed = 3,
+    Toughness =4,
+    Agility=5, //灵巧
     /*下面是PlayerCharacter专有*/
-    Agility, //灵巧
-    FantasyAttack,
-    FantasyAttackSpeed,
+    FantasyAttack = 6,
+    FantasyAttackSpeed=7,
+}
+public struct NatureStruct {
+    public float normal;
+    public float fire;
 }

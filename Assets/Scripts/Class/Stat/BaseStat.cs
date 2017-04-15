@@ -1,34 +1,40 @@
 ﻿public class BaseStat
 {
 
-    private int _baseValue;
-    private int _buffValue;
+    private float _basicValue; //基础能力值，一般只在初始化读取及升级加点时变动，白字
+    private float _adjustValue; //手持物等调整后的能力值，有相关操作后才变动，绿字
+    private bool _isPermitted;
 
     public BaseStat()
     {
-        _baseValue = 0;
-        _buffValue = 0;
+        _basicValue = 0;
+        _isPermitted = true;
+        _adjustValue = 0;
     }
 
     #region public  Getters and Setters
-    public int BaseValue
+    public float BasicValue
     {
-        get { return _baseValue; }
-        set { _baseValue = value; }
+        get { return _basicValue; }
+        set {
+            if (_isPermitted)
+                _basicValue = value;
+                _isPermitted = false;
+        }
     }
-    public int BuffValue
+    public float AdjustValue
     {
-        get { return _buffValue; }
-        set { _buffValue = value; }
+        get { return _adjustValue; }
+        set { _adjustValue = value; }
     }
     #endregion
 
-    public void Promote()
+    protected void Permit()
     {
-        _baseValue++;
+        _isPermitted = true;
     }
-    public int AdjustedBaseValue
+    public float Value
     {
-        get { return _baseValue + _buffValue; }
+        get { return _basicValue + _adjustValue; }
     }
 }

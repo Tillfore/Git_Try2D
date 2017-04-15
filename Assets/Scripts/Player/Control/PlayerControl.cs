@@ -21,7 +21,7 @@ public class PlayerControl : MonoBehaviour {
         targetTrans = defaultControlObject.transform;
         characterControl = controlTrans.GetComponent<PlayerCharacter>();
         cameraControl = gameObject.GetComponent<CameraControl>();
-        controlObject_speed = characterControl.characterData.speed;
+        controlObject_speed = (int)characterControl.characterData.speed;
     }
 
     void Update()
