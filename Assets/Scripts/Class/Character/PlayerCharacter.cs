@@ -36,16 +36,16 @@ public class PlayerCharacter : BaseCharacter {
     #endregion
 
 
-    public override void SecondAwake()
+    protected override void SecondAwake()
     {
         _attribute = new Attribute[Enum.GetValues(typeof(AttributeName)).Length];
-        m_displayLayer = characterData.characterDisplayer;
-        characterData.GetData();
-        Speed.BasicValue = characterData.speed;
         SetupAttributes();
+        characterData.ReadData(0);
+        Speed.BasicValue = characterData.baseSpeed;
+        m_displayLayer = characterData.characterDisplayer;
     }
 
-    public override void Start()
+    protected override void Start()
     {
         m_animator = gameObject.GetComponentInChildren<Animator>();
         SetObjectZ();
@@ -60,7 +60,8 @@ public class PlayerCharacter : BaseCharacter {
     }
     public Attribute GetAttribute(int index)
     {
-        return _attribute[index];
+        if(index < _attribute.Length) return _attribute[index];
+        else { Debug.Log(_attribute+"取得非法索引：" + index);return _attribute[0]; }
     }
     protected void SetAttribute(Attribute value, int index = -1)
     {

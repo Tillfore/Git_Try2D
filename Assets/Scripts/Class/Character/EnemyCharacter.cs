@@ -9,12 +9,12 @@ public class EnemyCharacter : BaseCharacter {
     public EnemyCharacterData enemyCharacterData;//暂时代替数据库
     #endregion
 
-    public override void SecondAwake()
+    protected override void SecondAwake()
     {
         m_displayLayer = characterData.characterDisplayer;
     }
 
-    public override void Start()
+    protected override void Start()
     {
         m_animator = gameObject.GetComponentInChildren<Animator>();
         SetObjectZ();

@@ -1,50 +1,74 @@
 ﻿using System.Collections;
 using UnityEngine;
+using System;
 using System.IO;
 using System.Collections.Generic;
 
-
+/*待完善*/
 public class CSV  {
     static CSV cvs;
-    public List<string[]> m_ArrayData;
-    public static CSV GetInstance()
+    public List<List<string[]>> _csvArrayData;
+    private static readonly object syncRoot = new UnityEngine.Object();
+
+    private CSV()
+    {
+        _csvArrayData = new List<List<string[]>>();
+    }
+    public static CSV GetInstance()   //单例模式
     {
         if (cvs == null) {
-            cvs = new CSV();
+            lock (syncRoot) {
+                if (cvs == null) {
+                    cvs = new CSV();
+                    int i = 0;
+                    cvs.LoadFile(Application.dataPath + "/Database", "test.CSV", i);
+                    cvs.LoadFile(Application.dataPath + "/Database","player_character_data.CSV",i++);
+                    cvs.LoadFile(Application.dataPath + "/Database", "enemy_character_data.CSV", i++);
+                }
+            }
         }
         return cvs;
     }
-    private CSV()
-    {
-        m_ArrayData = new List<string[]>();
-    }
 
-    public void LoadFile(string path,string fileName) //读取CVS文件
+    protected void LoadFile(string path,string fileName,int i = 0) //读取CVS文件
     {
-        m_ArrayData.Clear();
         StreamReader sr = null;
         try {
             sr = File.OpenText(path + "//" + fileName);
         }
         catch {
-            Debug.Log("Can't find file!");
+            Debug.Log("Can't find file!"+path+"//"+fileName);
             return;
         }
+        cvs._csvArrayData.Add(new List<string[]>());
+        _csvArrayData[i].Clear();
         string line;
         while ((line = sr.ReadLine()) != null) {        //读取行
-            m_ArrayData.Add(line.Split(','));
+            _csvArrayData[i].Add(line.Split(','));
         }
         sr.Close();
         sr.Dispose();
     }
 
-    public string GetString(int row,int col)
+    public string GetString(int row,int col,int i=0)
     {
-        return m_ArrayData[row][col];
+        List<string[]> list;
+        if(!Enum.IsDefined(typeof(FileName),i)) { Debug.Log("指定数据序号无效！"); i = 0; }
+        list = _csvArrayData[i];
+        return list[row][col];
     }
-    public float GetFloat(int row,int col)
+    public float GetFloat(int row,int col, int i = 0)
     {
-        return float.Parse(m_ArrayData[row][col]);
+        List<string[]> list;
+        if (!Enum.IsDefined(typeof(FileName), i)) { Debug.Log("指定数据序号无效！"); i = 0; }
+        list = _csvArrayData[i];
+        return float.Parse(list[row][col]);
     }
 
+}
+
+public enum FileName {
+    TEST,
+    PLAYER_CHARACTER_DATA,
+    ENEMY_CHARACTER_DATA,
 }

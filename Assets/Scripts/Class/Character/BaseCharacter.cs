@@ -9,7 +9,7 @@ public class BaseCharacter : MonoBehaviour {
     public CharacterData characterData;//暂时代替数据库
     #endregion
 
-    private uint _id;
+    private int _id;
     private string _name;
 
 
@@ -31,7 +31,7 @@ public class BaseCharacter : MonoBehaviour {
     }
 
     #region public 封装角色名称的读写    ID  CheracterName
-    public uint ID {
+    public int ID {
         get { return _id; }
         set { _id = value; }
     }
@@ -83,8 +83,9 @@ public class BaseCharacter : MonoBehaviour {
     }
     #endregion
 
-    public void Awake()
+    void Awake()
     {
+        if (characterData.id != 0) _id = characterData.id;
         var deltaPropertyLength = 0;
         if (m_deltaDifferentCharacter != 1) {deltaPropertyLength = 2;} //一般角色少继承2个能力值
         _name = string.Empty;
@@ -97,25 +98,22 @@ public class BaseCharacter : MonoBehaviour {
         SecondAwake();
     }
 
-    public virtual void SecondAwake()   //补充Setup 
+    protected virtual void SecondAwake()   //补充Setup 
     {
-        characterData.GetData();
-        Speed.BasicValue = characterData.speed;
+        characterData.ReadData();
+        Speed.BasicValue = characterData.baseSpeed;
         #region 临时数据读取
-        Debug.Log("speed is"+characterData.speed);
-        Debug.Log("BasicValue is "+Speed.BasicValue);
-        Debug.Log("Value is "+Speed.Value);
         m_displayLayer = characterData.characterDisplayer;
         #endregion
     }
 
-    public virtual void Start()
+    protected virtual void Start()
     {
         m_animator = gameObject.GetComponentInChildren<Animator>();
         SetObjectZ();
     }
 
-    public virtual void Update()
+    protected virtual void Update()
     {
         SetObjectZ();
     }
@@ -150,11 +148,13 @@ public class BaseCharacter : MonoBehaviour {
 
     public Vital GetVital(int index)
     {
-        return _vital[index];
+        if (index < _vital.Length) return _vital[index];
+        else { Debug.Log(_vital + "取得非法索引：" + index); return _vital[0]; }
     }
     public Property GetProperty(int index)
     {
-        return _property[index];
+        if (index < _property.Length) return _property[index];
+        else { Debug.Log(_property + "取得非法索引：" + index); return _property[0]; }
     }
 
     protected void SetVital(Vital value, int index = -1)
@@ -245,7 +245,7 @@ public class BaseCharacter : MonoBehaviour {
             Vector3 moveTowardPosition = transform.position;
             moveTowardPosition.x += deltaX;
             moveTowardPosition.y += deltaY;
-            float maxDistanceDelta = Time.deltaTime * Speed.Value/100;
+            float maxDistanceDelta = Time.deltaTime * Speed.ModifiedValue / 100;
             transform.position = Vector3.MoveTowards(transform.position, moveTowardPosition, maxDistanceDelta);
         }
         //SetObjectZ();

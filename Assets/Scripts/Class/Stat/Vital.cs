@@ -18,8 +18,8 @@ public class Vital : ModifiedStat {
     {
         get
         {
-            if (_curValue > Value)
-                _curValue = Value;
+            if (_curValue > ModifiedValue)
+                _curValue = ModifiedValue;
             return _curValue;
         }
         set { _curValue = value; }

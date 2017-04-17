@@ -14,6 +14,8 @@ public class PlayerControl : MonoBehaviour {
     private PlayerCharacter characterControl;
     private CameraControl cameraControl;
 
+    private PlayerCommand _playerCommand;
+
 
     void Start()
     {
@@ -21,17 +23,22 @@ public class PlayerControl : MonoBehaviour {
         targetTrans = defaultControlObject.transform;
         characterControl = controlTrans.GetComponent<PlayerCharacter>();
         cameraControl = gameObject.GetComponent<CameraControl>();
-        controlObject_speed = (int)characterControl.characterData.speed;
+        controlObject_speed = (int)characterControl.Speed.ModifiedValue;
     }
 
     void Update()
     {
-        if (characterControl != null)
-        {
-            MoveControl(); //移动操作
-            SelectTargetObject();
-            cameraControl.GetShootingTarget(controlTrans, controlObject_speed); //调用摄像机
+        if (characterControl != null) {
+        characterControl.Move(_playerCommand.deltaX, _playerCommand.deltaY);
+        cameraControl.GetShootingTarget(controlTrans, controlObject_speed); //调用摄像机
+        SelectTargetObject();
         }
+    }
+
+    private void FixedUpdate()
+    {
+        _playerCommand.deltaX = Input.GetAxis("Horizontal");
+        _playerCommand.deltaY = Input.GetAxisRaw("Vertical");//移动操作
     }
 
     void SelectTargetObject()
@@ -49,15 +56,15 @@ public class PlayerControl : MonoBehaviour {
     {
         if (!trans) trans = targetTrans;
         if (trans.gameObject.layer == legalLayer && trans != controlTrans) {
+            characterControl.Move(0, 0);//命令重置，待封装
             controlTrans = trans;
             characterControl = controlTrans.GetComponent<PlayerCharacter>();
             Debug.Log("操作对象更换为：" + controlTrans);
         }
     }
 
-    void MoveControl()
-    {
-        characterControl.Move(Input.GetAxis("Horizontal"),Input.GetAxisRaw("Vertical"));
+    private struct PlayerCommand {
+        public float deltaX;
+        public float deltaY;
     }
-
 }
