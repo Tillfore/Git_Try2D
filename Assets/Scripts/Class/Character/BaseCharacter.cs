@@ -1,17 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor.Animations;
 using System;       //添加对Enum class的使用
 
 public class BaseCharacter : MonoBehaviour {
 
+    private int _id;
+    private string _name;
+    public GameObject handheld;
+    public GameObject characterDisplayer;
+    public GameObject characterUI;
+
     #region 临时数据库
     public CharacterData characterData;//暂时代替数据库
     #endregion
-
-    private int _id;
-    private string _name;
-
 
     private Vital[] _vital;
     private Property[] _property;
@@ -19,7 +22,6 @@ public class BaseCharacter : MonoBehaviour {
 
     private string _standAnime = "Anime_stand_index";
 
-    protected GameObject m_displayLayer;
     protected Animator m_animator;
     protected bool m_direction_index = true; //记录前后朝向
     protected bool m_direction_left = true;  //记录左右朝向
@@ -91,6 +93,10 @@ public class BaseCharacter : MonoBehaviour {
         _name = string.Empty;
         _vital = new Vital[Enum.GetValues(typeof(VitalName)).Length];
         _property = new Property[Enum.GetValues(typeof(PropertyName)).Length - deltaPropertyLength];
+        //读取CharacterData
+        characterData.ReadData(m_deltaDifferentCharacter);
+        m_animator = gameObject.GetComponentInChildren<Animator>();
+        
         //创建各属性能力值列表
         SetupVitals();
         SetupPropertys();
@@ -100,16 +106,11 @@ public class BaseCharacter : MonoBehaviour {
 
     protected virtual void SecondAwake()   //补充Setup 
     {
-        characterData.ReadData();
         Speed.BasicValue = characterData.baseSpeed;
-        #region 临时数据读取
-        m_displayLayer = characterData.characterDisplayer;
-        #endregion
     }
 
     protected virtual void Start()
     {
-        m_animator = gameObject.GetComponentInChildren<Animator>();
         SetObjectZ();
     }
 
@@ -275,7 +276,7 @@ public class BaseCharacter : MonoBehaviour {
             }
         }
         if (h < -0.05f) {
-            m_displayLayer.transform.localScale = new Vector3(1, 1, 1);
+            characterDisplayer.transform.localScale = new Vector3(1, 1, 1);
             m_direction_left = true;
             if (m_iswalking) return;
             else if (h < -0.25f) {
@@ -285,7 +286,7 @@ public class BaseCharacter : MonoBehaviour {
             }
         }
         else if (h > 0.05f) {
-            m_displayLayer.transform.localScale = new Vector3(-1, 1, 1);
+            characterDisplayer.transform.localScale = new Vector3(-1, 1, 1);
             m_direction_left = false;
             if (m_iswalking) return;
             else if (h > 0.25f) {

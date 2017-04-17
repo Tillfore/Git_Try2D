@@ -13,8 +13,8 @@
 }
 
 public enum AttributeName {
-    Strong,
-    Intelligence,
-    Dexterity,
-    Luck,
+    STRONG,
+    INTELLIGENCE,
+    DEXTERITY,
+    LUCK,
 }

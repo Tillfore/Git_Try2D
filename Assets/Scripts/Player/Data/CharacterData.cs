@@ -18,27 +18,26 @@ public class CharacterData {
     public string spriteAnimator;
     public string spriteIcon;
     #endregion
-    public GameObject handheld;
-    public GameObject characterDisplayer;
-    public GameObject characterUI;
+
 
     public void ReadData(int listnum =0)
     {
         if (id != 0) {
-            name = CSV.GetInstance().GetString(id, 1);
-            information = CSV.GetInstance().GetString(id, 3);
-            baseHP = (int)CSV.GetInstance().GetFloat(id, 4);
-            baseEP = (int)CSV.GetInstance().GetFloat(id, 5);
-            baseSpeed = CSV.GetInstance().GetFloat(id, 6);
-            baseToughness = CSV.GetInstance().GetFloat(id, 7);
-            handheldID = (int)CSV.GetInstance().GetFloat(id, 8);
+            name = CSV.GetInstance().GetString(id, 1, listnum);
+            information = CSV.GetInstance().GetString(id, 3, listnum);
+            baseHP = (int)CSV.GetInstance().GetFloat(id, 4, listnum);
+            baseEP = (int)CSV.GetInstance().GetFloat(id, 5, listnum);
+            baseSpeed = CSV.GetInstance().GetFloat(id, 6, listnum);
+            baseToughness = CSV.GetInstance().GetFloat(id, 7, listnum);
+            handheldID = (int)CSV.GetInstance().GetFloat(id, 8, listnum);
             wearsID.Clear();
-            int wearscount = (int)CSV.GetInstance().GetFloat(id, 9);
+            int wearscount = (int)CSV.GetInstance().GetFloat(id, 9, listnum);
             for (int i = 0; i < wearscount; i++) {
-                wearsID.Add((int)CSV.GetInstance().GetFloat(id, 10 + i));
+                wearsID.Add((int)CSV.GetInstance().GetFloat(id, 10 + i, listnum));
             }
-            spriteAnimator = CSV.GetInstance().GetString(id, 10 + wearscount);
-            spriteIcon = CSV.GetInstance().GetString(id, 11 + wearscount);
+            if (wearscount == 0) wearscount = 1;
+            spriteAnimator = CSV.GetInstance().GetString(id, 10 + wearscount, listnum);
+            spriteIcon = CSV.GetInstance().GetString(id, 11 + wearscount, listnum);
         }
     }
 }

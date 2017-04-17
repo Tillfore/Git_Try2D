@@ -28,6 +28,6 @@ public class Vital : ModifiedStat {
 
 public enum VitalName
 {
-    Health,
-    Energy,
+    HEALTH,
+    ENERGY,
 }

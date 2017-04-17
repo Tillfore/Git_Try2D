@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
+using UnityEditor.Animations;
 using UnityEngine;
 using System;
 
@@ -9,9 +11,14 @@ public class EnemyCharacter : BaseCharacter {
     public EnemyCharacterData enemyCharacterData;//暂时代替数据库
     #endregion
 
+    public EnemyCharacter()
+    {
+        m_deltaDifferentCharacter = 2; //向父类变量声明自己是PlayerCharacter
+    }
+
     protected override void SecondAwake()
     {
-        m_displayLayer = characterData.characterDisplayer;
+        Speed.BasicValue = characterData.baseSpeed;
     }
 
     protected override void Start()

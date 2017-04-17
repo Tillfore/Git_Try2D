@@ -40,9 +40,7 @@ public class PlayerCharacter : BaseCharacter {
     {
         _attribute = new Attribute[Enum.GetValues(typeof(AttributeName)).Length];
         SetupAttributes();
-        characterData.ReadData(0);
         Speed.BasicValue = characterData.baseSpeed;
-        m_displayLayer = characterData.characterDisplayer;
     }
 
     protected override void Start()

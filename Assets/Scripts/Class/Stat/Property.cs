@@ -23,15 +23,15 @@ public class Property : ModifiedStat {
 
 }
 public enum PropertyName {
-    Attack=0,
-    Defend = 1,
-    AttackSpeed =2,
-    Speed = 3,
-    Toughness =4,
-    Agility=5, //灵巧
+    ATTACK=0,
+    DEFEND = 1,
+    ATTACK_SPEED =2,
+    SPEED = 3,
+    TOUGHNEES =4,
+    AGILITY=5, //灵巧
     /*下面是PlayerCharacter专有*/
-    FantasyAttack = 6,
-    FantasyAttackSpeed=7,
+    FANTASY_ATTACK = 6,
+    FANTASY_ATTACK_SPEED=7,
 }
 public struct NatureStruct {
     public float normal;

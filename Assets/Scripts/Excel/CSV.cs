@@ -20,10 +20,9 @@ public class CSV  {
             lock (syncRoot) {
                 if (cvs == null) {
                     cvs = new CSV();
-                    int i = 0;
-                    cvs.LoadFile(Application.dataPath + "/Database", "test.CSV", i);
-                    cvs.LoadFile(Application.dataPath + "/Database","player_character_data.CSV",i++);
-                    cvs.LoadFile(Application.dataPath + "/Database", "enemy_character_data.CSV", i++);
+                    cvs.LoadFile(Application.dataPath + "/Database", "test.CSV", 0);
+                    cvs.LoadFile(Application.dataPath + "/Database","player_character_data.CSV", 1);
+                    cvs.LoadFile(Application.dataPath + "/Database", "enemy_character_data.CSV", 2);
                 }
             }
         }
