@@ -12,8 +12,8 @@ public class BaseCharacter : MonoBehaviour {
     public GameObject characterDisplayer;
     public GameObject characterUI;
 
-    #region 临时数据库
-    public CharacterData characterData;//暂时代替数据库
+    #region 数据中转
+    public CharacterData characterData;
     #endregion
 
     private Vital[] _vital;
@@ -96,7 +96,7 @@ public class BaseCharacter : MonoBehaviour {
         //读取CharacterData
         characterData.ReadData(m_deltaDifferentCharacter);
         m_animator = gameObject.GetComponentInChildren<Animator>();
-        
+        m_animator.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>(characterData.spriteAnimatorPath);
         //创建各属性能力值列表
         SetupVitals();
         SetupPropertys();

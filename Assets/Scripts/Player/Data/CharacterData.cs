@@ -15,8 +15,8 @@ public class CharacterData {
     #region 暂时把手持物、佩戴物的加成放这
     public int handheldID = 0;
     public List<int> wearsID = new List<int>{0, 0, 0, 0};
-    public string spriteAnimator;
-    public string spriteIcon;
+    public string spriteAnimatorPath;
+    public string spriteIconPath;
     #endregion
 
 
@@ -36,8 +36,8 @@ public class CharacterData {
                 wearsID.Add((int)CSV.GetInstance().GetFloat(id, 10 + i, listnum));
             }
             if (wearscount == 0) wearscount = 1;
-            spriteAnimator = CSV.GetInstance().GetString(id, 10 + wearscount, listnum);
-            spriteIcon = CSV.GetInstance().GetString(id, 11 + wearscount, listnum);
+            spriteAnimatorPath = ("Animator/Character/"+CSV.GetInstance().GetString(id, 10 + wearscount, listnum));
+            spriteIconPath = "Animator/Avator/"+CSV.GetInstance().GetString(id, 11 + wearscount, listnum);
         }
     }
 }

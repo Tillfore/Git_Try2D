@@ -7,7 +7,7 @@ using System;
 
 public class EnemyCharacter : BaseCharacter {
 
-    #region 临时数据库
+    #region 数据中转
     public EnemyCharacterData enemyCharacterData;//暂时代替数据库
     #endregion
 
